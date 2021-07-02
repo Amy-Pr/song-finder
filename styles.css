@@ -1,0 +1,37 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    text-align: center;
+}
+
+#songs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-around;
+
+}
+
+.songitem {
+    text-align: center; 
+}
+
+audio {
+    color: pink;
+}
+
+@media (max-width: 940px) {
+
+    #songs {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 640px) {
+
+    #songs {
+        grid-template-columns: auto;
+    }
+}
